@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LA NACION / FOTOREPORTAJE</title>
+
+    <link rel="stylesheet" href="http://especiales.lanacion.com.ar/multimedia/proyectos/fonts/font.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <!-- <script type = "text/javascript" src="script.js"></script>  -->
+</head>
+
+
+<script>
+    window.addEventListener("scroll", function () {
+        var target = document.getElementsByTagName('div'); 
+        console.log(target);
+        if (window.pageYOffset > 2400) {
+            target[0].style.display = "block";
+        }
+        else if (window.pageYOffset < 2400) {
+            target[0].style.display = "none";
+        }
+    }, false);
+
+    window.addEventListener("scroll", function () {
+        var target = document.getElementsByTagName('div'); console.log(target);
+        if (window.pageYOffset > 3200) {
+            target[1].style.display = "block";
+        }
+        else if (window.pageYOffset < 3200) {
+            target[1].style.display = "none";
+        }
+    }, false);
+
+    window.addEventListener("scroll", function () {
+        var target = document.getElementsByTagName('div'); console.log(target);
+        if (window.pageYOffset > 4000) {
+            target[2].style.display = "block";
+        }
+        else if (window.pageYOffset < 4000) {
+            target[2].style.display = "none";
+        }
+    }, false);
+</script>
+
+
+<style>
+    html,
+    body {
+        height: 100%;
+        color: white;
+        position: relative;
+    }
+
+    .prueba {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 800px;
+        background-color: yellow;
+        z-index: 19;
+    }
+
+    .fadein {
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        /* Firefox */
+        -webkit-animation: fadein 2s;
+        /* Safari and Chrome */
+        -o-animation: fadein 2s;
+        /* Opera */
+    }
+
+
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* Firefox */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* Opera */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .dos {
+        z-index: 20;
+    }
+
+    .tres {
+        z-index: 21;
+    }
+
+
+    .cabezal {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+    }
+
+    .logo {
+        width: 120px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 10px;
+    }
+
+    .circulos {
+        width: 5px;
+        height: 300px;
+        position: fixed;
+        right: 80px;
+        top: 220px;
+        z-index: 100;
+    }
+
+    .bolito {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+
+    .bolo {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: white;
+        position: fixed;
+        /*z-index: 101;*/
+        top: 241px;
+        right: 76px;
+    }
+
+    .bdos {
+        top: 241px;
+
+    }
+
+    .btres {
+        top: 266px;
+
+    }
+
+    .bcuatro {
+        top: 291px;
+    }
+
+
+
+
+    .apertura,
+    .intro {
+        position: relative;
+        background-color: black;
+        width: 100%;
+        height: 800px;
+    }
+
+    .intro {
+        padding-right: 430px;
+        padding-left: 80px;
+        padding-top: 185px;
+    }
+
+
+
+
+    .fotoapertura {
+        opacity: 0.6;
+    }
+
+    .titulo {
+        color: white;
+        position: absolute;
+        top: 120px;
+        left: 80px;
+    }
+
+
+
+
+    hr {
+        width: 150px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        border: 0.5px solid white;
+    }
+
+    h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        width: 170px;
+    }
+
+    h1 {
+        font-family: suecaslabbold;
+        font-size: 77px;
+        line-height: 80px;
+        width: 760px;
+        padding-top: 30px;
+    }
+
+    .firma {
+        padding-top: 25px;
+        font-family: suecaslabbold;
+        font-size: 11px;
+        margin-top: 110px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+
+    .light {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-family: suecaslabmedium;
+        font-size: 32px;
+        line-height: 45px;
+        padding-bottom: 30px;
+    }
+
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: normal;
+        letter-spacing: 0.3px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .primparr:first-letter {
+        font-family: suecaslabbold;
+        font-size: 100px;
+        line-height: 115px;
+        margin: -10px 38px 10px 0;
+        float: left;
+    }
+
+    .slide {
+        height: 800px;
+    }
+
+    .foto1 {
+        position: fixed;
+        top: 0px;
+        z-index: -10;
+    }
+
+
+
+    .epigrafes {
+        background-color: rgba(0, 0, 0, .8);
+        width: 400px;
+        padding: 30px 35px 10px 35px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 90px;
+        z-index: 999;
+    }
+
+    .epi1 {
+        top: 2200px;
+    }
+
+    .epi2 {
+        top: 3000px;
+    }
+
+    .epi3 {
+        top: 3800px;
+    }
+
+    .epi4 {
+        top: 4600px;
+        margin-bottom: 800px;
+    }
+
+    .textoepi {
+        font-family: suecaslabmedium;
+        font-size: 22px;
+        line-height: 34px;
+        letter-spacing: -0.1px;
+    }
+
+    .creditoepi {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        letter-spacing: 0.5px;
+
+
+    }
+</style>
+
+<body>
+    <div class="prueba fadein">
+        <img src="img/2687212h1050_1280x800.jpg">
+        <p class="bolo bdos"></p>
+    </div>
+
+    <div class="prueba dos fadein">
+        <img src="img/2687210h1050_1280x800.jpg">
+        <p class="bolo btres"></p>
+    </div>
+
+    <div class="prueba tres fadein">
+        <img src="img/2687206h1050_1280x800.jpg">
+        <p class="bolo bcuatro"></p>
+    </div>
+
+
+
+
+
+    <div class="cabezal">
+        <div class="logo">
+            <img src="img/LaNacionLogo.png">
+        </div>
+    </div>
+    <div class="circulos">
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+        <div class="bolito"></div>
+    </div>
+    <div class="apertura">
+        <img class="fotoapertura" src="img/2687202h1050_1280x800.jpg" alt="">
+        <div class="titulo fadein">
+            <hr>
+            <h4>fotoreportaje</h4>
+            <h1>Gaza, el lugar de la muerte y de la resignación</h1>
+            <div class="firma">
+                <hr>
+                <h3>
+                    <span class="light">Por</span> Nombre Apellido</h3>
+                <h3>
+                    <span class="light">Fotos de</span> Nombre Apellido</h3>
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <h2>Cuando el fotógrafo Ibrahim Abu Mustafa partió para cubrir las protestas en Gaza el lunes 14 de mayo último por
+            la mañana se encontró con un conocido en silla de ruedas.
+        </h2>
+        <p class="primparr">El fotógrafo Ibrahim Abu Mustafa partió para cubrir las protestas en Gaza el lunes 14 de mayo
+            último por la mañana se encontró con un conocido en silla de ruedas.“Hoy, esta mañana, le dije ‘Hola’ a un hombre”,
+            recuerda. “Al final del día estaba en su funeral”. Abu Mustafa ha pasado casi la mitad de sus 35 años como fotógrafo
+            profesional cubriendo un lugar pequeño como la Franja de Gaza. El lunes pasado fue el día más mortífero en Gaza
+            en años. Un tiroteo israelí terminó con la vida de más de 50 palestinos que exigían el derecho a regresar a sus
+            hogares ancestrales que ahora se encuentran al otro lado de la cerca fronteriza.</p>
+    </div>
+    <div class="slide">
+        <img class="foto1" src="img/2687194h1050_1280x800.jpg" alt="">
+        <div class="epigrafes epi1">
+            <p class="textoepi">Un manifestante palestino herido es evacuado durante la protesta contra el traslado de la
+                embajada de Estados Unidos a Jerusalem
+            </p>
+            <p class="creditoepi">foto: agencia / Nombre Apellido</p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="epigrafes epi2">
+            <p class="textoepi">Un manifestante palestino herido es evacuado durante la protesta contra el traslado de la
+                embajada de Estados Unidos a Jerusalem. Un manifestante palestino herido es evacuado durante la protesta
+                contra el traslado de la embajada de Estados Unidos a Jerusalem.
+            </p>
+            <p class="creditoepi">foto: agencia / Nombre Apellido</p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="epigrafes epi3">
+            <p class="textoepi">Manifestantes palestinos huyen del fuego israelí y del gas lacrimógeno durante la protesta
+            </p>
+            <p class="creditoepi">foto: agencia / Nombre Apellido</p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="epigrafes epi4">
+            <p class="textoepi">Parientes de un palestino que murió durante la protesta en la frontera entre Israel y Gaza
+                llora en el funeral
+            </p>
+            <p class="creditoepi">foto: agencia / Nombre Apellido</p>
+        </div>
+
+
+
+</body>
