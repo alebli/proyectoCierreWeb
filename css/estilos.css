@@ -1,0 +1,291 @@
+html,
+    body {
+        height: 100%;
+        color: white;
+        position: relative;
+    }
+
+    .prueba {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 800px;
+        background-color: yellow;
+        z-index: 19;
+    }
+
+    .fadein {
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        /* Firefox */
+        -webkit-animation: fadein 2s;
+        /* Safari and Chrome */
+        -o-animation: fadein 2s;
+        /* Opera */
+    }
+
+
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* Firefox */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* Opera */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .dos {
+        z-index: 20;
+    }
+
+    .tres {
+        z-index: 21;
+    }
+
+
+    .cabezal {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+    }
+
+    .logo {
+        width: 120px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 10px;
+    }
+
+    .circulos {
+        width: 5px;
+        height: 300px;
+        position: fixed;
+        right: 80px;
+        top: 220px;
+        z-index: 100;
+    }
+
+    .bolito {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+
+    .bolo {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: white;
+        position: fixed;
+        /*z-index: 101;*/
+        top: 241px;
+        right: 76px;
+    }
+
+    .bdos {
+        top: 241px;
+
+    }
+
+    .btres {
+        top: 266px;
+
+    }
+
+    .bcuatro {
+        top: 291px;
+    }
+
+
+
+
+    .apertura,
+    .intro {
+        position: relative;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+
+    .intro {
+        padding-right: 430px;
+        padding-left: 80px;
+        padding-top: 185px;
+    }
+
+
+
+
+    .fotoapertura {
+        opacity: 0.6;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .titulo {
+        color: white;
+        position: absolute;
+        top: 20%;
+        left: 80px;
+    }
+
+
+
+
+    hr {
+        width: 150px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        border: 0.5px solid white;
+    }
+
+    h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        width: 170px;
+    }
+
+    h1 {
+        font-family: suecaslabbold;
+        font-size: 77px;
+        line-height: 80px;
+        width: 760px;
+        padding-top: 30px;
+    }
+
+    .firma {
+        padding-top: 25px;
+        font-family: suecaslabbold;
+        font-size: 11px;
+        margin-top: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+
+    .light {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-family: suecaslabmedium;
+        font-size: 32px;
+        line-height: 45px;
+        padding-bottom: 30px;
+    }
+
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: normal;
+        letter-spacing: 0.3px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .primparr:first-letter {
+        font-family: suecaslabbold;
+        font-size: 100px;
+        line-height: 115px;
+        margin: -10px 38px 10px 0;
+        float: left;
+    }
+
+    .slide {
+        height: 800px;
+    }
+
+    .foto1 {
+        position: fixed;
+        top: 0px;
+        z-index: -10;
+    }
+
+
+
+    .epigrafes {
+        background-color: rgba(0, 0, 0, .8);
+        width: 400px;
+        padding: 30px 35px 10px 35px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 90px;
+        z-index: 999;
+    }
+
+    .epi1 {
+        top: 2200px;
+    }
+
+    .epi2 {
+        top: 3000px;
+    }
+
+    .epi3 {
+        top: 3800px;
+    }
+
+    .epi4 {
+        top: 4600px;
+        margin-bottom: 800px;
+    }
+
+    .textoepi {
+        font-family: suecaslabmedium;
+        font-size: 22px;
+        line-height: 34px;
+        letter-spacing: -0.1px;
+    }
+
+    .creditoepi {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        letter-spacing: 0.5px;
+
+
+    }
