@@ -147,6 +147,10 @@ html,
     }
 
     .intro {
+        position: relative;
+        background-color: black;
+        width: 100%;
+        height: 100%;
         padding-right: 430px;
         padding-left: 80px;
         padding-top: 185px;
@@ -162,20 +166,43 @@ html,
         object-fit: cover;
     }
 
+
+    .cont-titulo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 10%;
+        margin-right: 20%;
+        height: 100%;
+    }
+
     .titulo {
         color: white;
-        position: absolute;
-        top: 20%;
-        left: 80px;
+        /* background-color: red; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: space-evenly; */
+        /* height: 70%; */
+        /* justify-content: space-between; */
+
+        /* position: absolute; */
+        /* top: 20%; */
+        /* left: 80px; */
     }
 
 
-
+    .volanta{
+        margin-bottom: 35px;
+    }
 
     hr {
         width: 150px;
         margin-left: 0;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         border: 0.5px solid white;
     }
 
@@ -185,24 +212,25 @@ html,
         text-transform: uppercase;
         font-size: 12px;
         letter-spacing: 2px;
-        width: 170px;
+        /* width: 170px; */
     }
 
     h1 {
         font-family: suecaslabbold;
         font-size: 77px;
         line-height: 80px;
-        width: 760px;
-        padding-top: 30px;
+        /* width: 760px; */
+        /* padding-top: 30px; */
     }
 
     .firma {
-        padding-top: 25px;
+        /* padding-top: 25px; */
         font-family: suecaslabbold;
         font-size: 11px;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         text-transform: uppercase;
         letter-spacing: 0.8px;
+        margin-top: 80px;
     }
 
     .light {
@@ -288,4 +316,28 @@ html,
         letter-spacing: 0.5px;
 
 
+    }
+
+
+    @media only screen and (max-width: 800px) {
+        h1 {
+            font-size:60px;
+            line-height: 60px;
+        }
+    }
+
+
+
+    @media only screen and (max-width: 500px) {
+        h1 {
+            font-size:45px;
+            line-height: 45px;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        h1 {
+            font-size:30px;
+            line-height: 30px;
+        }
     }
