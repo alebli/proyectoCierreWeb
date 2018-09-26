@@ -4,7 +4,7 @@ html,
         color: white;
         position: relative;
     }
-
+/* 
     .prueba {
         position: fixed;
         top: 0;
@@ -12,10 +12,10 @@ html,
         display: none;
         width: 100%;
         height: 100%;
-        /* height: 800px; */
+        /* height: 800px;
         background-color: yellow;
         z-index: 19;
-    }
+    } */
 
     .fadein {
         animation: fadein 2s;
@@ -68,13 +68,15 @@ html,
         }
     }
 
+    
+/* 
     .dos {
         z-index: 20;
     }
 
     .tres {
         z-index: 21;
-    }
+    } */
 
 
     .cabezal {
@@ -103,7 +105,7 @@ html,
         z-index: 100;
     }
 
-    .bolito {
+    /* .bolito {
         width: 5px;
         height: 5px;
         border-radius: 50%;
@@ -117,7 +119,7 @@ html,
         border-radius: 50%;
         background-color: white;
         position: fixed;
-        /*z-index: 101;*/
+        /*z-index: 101;
         top: 241px;
         right: 76px;
     }
@@ -136,7 +138,7 @@ html,
         top: 291px;
     }
 
-
+ */
 
 
     .apertura {
@@ -164,7 +166,6 @@ html,
         position: absolute;
         top: 0;
         left: 0;
-        /* background-color: green; */
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -173,7 +174,6 @@ html,
         max-width: 930px;
         height: 100%;
         /* max-height: 300px;  */
-        /* background-color: red; */
     }
 
     .titulo {
@@ -263,7 +263,7 @@ html,
         max-width: 800px;
         max-height: 75%;
         /* background-color: red; */
-        overflow: scroll;
+        /* overflow: scroll; */
         /* position: relative;
         width: 100%;
         height: 100%;
@@ -296,20 +296,54 @@ html,
     }
 
     .slide {
-        height: 100%;
+        height: 200%;
         width: 100%;
-        background-color: red;
+        /* background-color: red; */
         position: relative;
+        border: 5px solid red;
+        /* display: inline; */
     }
 
-    .foto1 {
-        /* position: fixed; */
-        /* top: 200%; */
-        z-index: -10;
+    .cien {
+        height: 50%;
+        border: 2px solid yellow;
+    }
+
+    .foto {
+        position: fixed;
+        /* position: relative; */
+        top: 0px;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
+
+
+    .funo{
+        z-index: -13;
+        /* display: none; */
+        display: block;
+    }
+    .fdos {
+        z-index: -12; 
+        display: none;
+        /* display: block; */
+    }
+    .ftres {
+        z-index: -11;
+        display: none;
+        /* display: block; */
+    }
+    .fcuatro {
+        z-index: -10;
+        display: none;
+        /* display: block; */
+    }
+
+
+
+
 
 
 
@@ -319,25 +353,34 @@ html,
         padding: 30px 35px 10px 35px;
         box-sizing: border-box;
         position: absolute;
-        left: 90px;
+        left: 10%;
         z-index: 999;
+        bottom: 15%;
     }
 
     .epi1 {
-        top: 2200px;
+        /* top: 2200px; */
+        /* top: 200%; */
     }
 
     .epi2 {
-        top: 3000px;
+
+        /* top: 3000px; */
+        /* top: 300%; */
     }
 
     .epi3 {
-        top: 3800px;
+
+        /* top: 3800px; */
+        /* top: 400%; */
     }
 
     .epi4 {
-        top: 4600px;
-        margin-bottom: 800px;
+
+        /* top: 4600px; */
+        /* top: 500%; */
+        /* margin-bottom: 7%; */
+        
     }
 
     .textoepi {
@@ -358,6 +401,10 @@ html,
     }
 
 
+
+
+
+
     @media only screen and (max-width: 800px) {
         h1 {
             font-size:60px;
@@ -374,8 +421,9 @@ html,
         }
 
         .cont-intro{
-            height: 200%;
+            height: auto;
             align-items: flex-start;
+            padding-bottom: 10%;
         }
 
         .intro{
@@ -386,6 +434,28 @@ html,
             margin-top: 25%;
             font-size: 22px;
             line-height: 34px;
+        }
+
+        .epigrafes {
+            width: 100%;
+            left: 0;
+        }
+
+        .textoepi{
+           font-size: 18px;
+           line-height: 30px;
+
+        }
+
+        .epi1 .epi2 .epi3 .epi4{
+            top: auto;
+            bottom: 0;        
+        }
+
+        .epi4{
+            margin-bottom: 0%;
+        }   
+
     }
 
     @media only screen and (max-width: 320px) {
@@ -405,5 +475,7 @@ html,
         font-size: 13px;
         line-height: 24px;
     }
+
+
 
     }
