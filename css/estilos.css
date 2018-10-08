@@ -68,6 +68,63 @@ html,
         }
     }
 
+
+    .fadeout {
+        animation: fadeout 2s;
+        -moz-animation: fadeout 2s;
+        /* Firefox */
+        -webkit-animation: fadeout 2s;
+        /* Safari and Chrome */
+        -o-animation: fadeout 2s;
+        /* Opera */
+    }
+
+
+
+
+
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes fadeout {
+        /* Firefox */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes fadeout {
+        /* Safari and Chrome */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes fadeout {
+        /* Opera */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+
+
+
     
 /* 
     .dos {
@@ -119,10 +176,11 @@ html,
         height: 13px;
         border-radius: 50%;
         background-color: white;
-        position: fixed; */
+        position: fixed; 
         z-index: 101;
         top: 241px;
         right: 76px;
+        display: block;
     }
 
     /* .bdos {
