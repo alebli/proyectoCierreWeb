@@ -19,7 +19,7 @@ slides.forEach(function (slide, index) {
         if (window.pageYOffset > 2 * height * (index + 1)) {
             slide.style.display = "block";
         }
-        else if (window.pageYOffset < 2 * height * (index) + 1) {
+        else if (window.pageYOffset < 2 * height * (index + 1)) {
             slide.style.display = "none";
         }
     })
