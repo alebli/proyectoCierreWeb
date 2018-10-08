@@ -103,9 +103,10 @@ html,
         right: 80px;
         top: 220px;
         z-index: 100;
+        opacity: 0.3;
     }
 
-    /* .bolito {
+    .bolito {
         width: 5px;
         height: 5px;
         border-radius: 50%;
@@ -118,13 +119,13 @@ html,
         height: 13px;
         border-radius: 50%;
         background-color: white;
-        position: fixed;
-        /*z-index: 101;
+        position: fixed; */
+        z-index: 101;
         top: 241px;
         right: 76px;
     }
 
-    .bdos {
+    /* .bdos {
         top: 241px;
 
     }
@@ -136,9 +137,9 @@ html,
 
     .bcuatro {
         top: 291px;
-    }
+    } */
 
- */
+
 
 
     .apertura {
@@ -297,19 +298,27 @@ html,
         float: left;
     }
 
+
+
     .slide {
         height: 200%;
         width: 100%;
-        /* background-color: red; */
+        /* background-color: blue; */
         position: relative;
-        border: 5px solid red;
+        /* border: 5px solid red; */
         /* display: inline; */
     }
 
-    .cien {
+
+
+    .slidecien {
+        height: 100%;
+    }
+
+    /* .cien {
         height: 50%;
         border: 2px solid yellow;
-    }
+    } */
 
     .foto {
         position: fixed;
@@ -318,29 +327,27 @@ html,
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
     }
 
 
 
     .funo{
         z-index: -13;
-        /* display: none; */
-        display: block;
+        /* display: block; */
     }
+
     .fdos {
         z-index: -12; 
         display: none;
-        /* display: block; */
     }
     .ftres {
         z-index: -11;
         display: none;
-        /* display: block; */
     }
     .fcuatro {
         z-index: -10;
         display: none;
-        /* display: block; */
     }
 
 
@@ -417,6 +424,15 @@ html,
 
 
     @media only screen and (max-width: 700px) {
+
+        .circulos{
+            right: 20px;
+        }
+
+        .bolo{
+            right: 17px;
+        }
+
         h1 {
             font-size:45px;
             line-height: 45px;
@@ -439,8 +455,8 @@ html,
         }
 
         .epigrafes {
-            width: 100%;
-            left: 0;
+            width: 80%;
+            left: 10%;
         }
 
         .textoepi{
