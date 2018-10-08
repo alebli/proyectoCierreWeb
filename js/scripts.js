@@ -1,12 +1,8 @@
 let slides = document.querySelectorAll(".foto");
-
-console.log("estos son los slides: " + slides);
-
 let height = window.innerHeight;
 
 
 slides.forEach(function (slide, index) {
-    console.log(slide)
 
     // slide.style.display = "none";
 
