@@ -4,7 +4,6 @@ console.log("estos son los slides: " + slides);
 
 let height = window.innerHeight;
 
-
 slides.forEach(function (slide, index) {
     console.log(slide)
 
