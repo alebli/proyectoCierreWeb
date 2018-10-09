@@ -1,6 +1,6 @@
 let slides = document.querySelectorAll(".foto");
 let height = window.innerHeight;
-let offset = document.querySelector("#offset").clientHeight - height; 
+let offset = height; 
 
 slides.forEach(function (slide, index) {
 
