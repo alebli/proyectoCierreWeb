@@ -154,21 +154,27 @@ html,
     }
 
     .circulos {
-        width: 5px;
+        /* width: 5px; */
         height: 300px;
         position: fixed;
         right: 80px;
         top: 220px;
         z-index: 100;
         opacity: 0.3;
+        text-align: center;
     }
 
     .bolito {
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background-color: white;
-        margin-bottom: 20px;
+        /* width: 5px; */
+        /* height: 5px; */
+        /* border-radius: 50%; */
+        /* background-color: white; */
+        /* margin-bottom: 20px; */
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0;
+        vertical-align: bottom;
+        height: 32px;
     }
 
     .bolo {
