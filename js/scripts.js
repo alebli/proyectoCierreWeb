@@ -1,20 +1,25 @@
-let slides = document.querySelectorAll(".foto");
-let bolitos = document.querySelectorAll(".bolito");
-let height = window.innerHeight;
-let offset = height; 
+window.addEventListener("load", function () {
+    let slides = document.querySelectorAll(".foto");
+    let bolitos = document.querySelectorAll(".bolito");
+    let height = window.innerHeight;
+    let offset = height;
+    let circChico = "24px";
+    let circGrande = "48px";
 
-slides.forEach(function (slide, index) {
+    bolitos[0].style.fontSize = circGrande;
 
-    window.addEventListener("scroll", () => {
-        console.log("window.pageYOffset:", window.pageYOffset)
-        if (window.pageYOffset >= offset + height * 2 * index) {
-            bolitos.forEach(b => b.style.fontSize = "24px");
-            bolitos[index].style.fontSize = "48px"
-            slide.style.display = "block";
-        }
-        else {
-            slide.style.display = "none";
-        }
-    })
+    slides.forEach(function (slide, index) {
 
-})
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset >= offset + height * 2 * index) {
+                bolitos.forEach(b => b.style.fontSize = circChico);
+                bolitos[index].style.fontSize = circGrande
+                slide.style.display = "block";
+            }
+            else {
+                slide.style.display = "none";
+            }
+        })
+
+    });
+});
